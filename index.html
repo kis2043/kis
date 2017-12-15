@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>약수탕</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding: 20px
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        @media (max-width:500px){
+            .content{
+                flex-direction: column;
+            }
+            .content nav, .content aside{
+            border: none;
+            flex-basis: auto;
+            }
+            main{
+                order: 0;
+            }
+            nav{
+                order: 1;
+            }
+            aside{
+                order: 2;
+                display: none;
+            }
+        }        
+        
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+        aside{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>약 수 탕</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>약수탕 소개</li>
+                    <li>오시는 길</li>
+                    <li>회장님 말씀</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam cumque hic repudiandae error laborum reprehenderit nihil doloribus molestias sit accusamus non facilis quasi saepe culpa quisquam perspiciatis quidem architecto aperiam perferendis sapiente, minima rem, delectus, eos quas itaque? Quibusdam doloribus impedit quaerat omnis non harum sed, saepe tempore nisi dolore.
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores impedit alias eius ullam autem quas adipisci dolores itaque eligendi accusantium nulla voluptas at veritatis necessitatibus voluptatem nihil a debitis, explicabo facilis odio minima! Eius libero mollitia molestiae molestias amet in impedit ut totam provident minus, porro ex facere placeat harum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores impedit alias eius ullam autem quas adipisci dolores itaque eligendi accusantium nulla voluptas at veritatis necessitatibus voluptatem nihil a debitis, explicabo facilis odio minima! Eius libero mollitia molestiae molestias amet in impedit ut totam provident minus, porro ex facere placeat harum.
+                </p>
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://shs1212.github.io/kis2043/" target="_blank" title="대중 목욕탕 (약수탕)">약 수 탕</a>
+        </footer>
+    </div>
+</body>
+</html>
